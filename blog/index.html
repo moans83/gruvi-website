@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" href="../gruvi.png">
+
+  <title>Women's Health & Wellbeing | Gruvi</title>
+
+  <meta
+    name="description"
+    content="Practical, evidence-based information about women's health, movement, strength, nutrition, perimenopause, menopause, sleep and everyday wellbeing."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Women's Health & Wellbeing | Gruvi">
+  <meta
+    property="og:description"
+    content="Practical, evidence-based information to help you understand your body and take care of your health."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lscompanion.com/blog/">
+
+  <link rel="canonical" href="https://lscompanion.com/blog/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Amplitude Analytics -->
+  <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.10-min.js.gz"></script>
+  <script>
+    window.amplitude.init(
+      '5563a87066774c27bb21d53c833ca3a7',
+      {
+        defaultTracking: false
+      }
+    );
+  </script>
+
+  <style>
+
+    :root {
+      --bg: #ffffff;
+      --text: #2f2238;
+      --muted: #6f5b7d;
+      --purple: #8f63b2;
+      --dark: #1c1326;
+      --border: #e4dce8;
+      --soft-purple: #f7f2f9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    /* HEADER */
+
+    .site-header {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 26px 28px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand-logo {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+    }
+
+ .brand-name {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: normal;
+}
+
+    .header-nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .header-nav a:hover {
+      color: var(--purple);
+    }
+
+    /* PAGE */
+
+    main {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 70px 28px 90px;
+    }
+
+    /* HERO */
+
+    .blog-hero {
+      max-width: 850px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--purple);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 22px;
+      font-size: clamp(40px, 6vw, 66px);
+      line-height: 1;
+      letter-spacing: -0.055em;
+      font-weight: 800;
+    }
+
+    .blog-hero p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 21px);
+      line-height: 1.6;
+    }
+    .app-cta-logo {
+  display: block;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin: 0 auto 18px;
+}
+/* BLOG EMAIL SIGNUP */
+
+.blog-signup {
+  max-width: 900px;
+  margin: 45px auto;
+  padding: 35px 40px;
+  background: #f4eef5;
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 22px;
+}
+
+.blog-signup-copy h2 {
+  margin: 0 0 8px;
+  color: #2f2238;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+}
+
+.blog-signup-copy p {
+  margin: 0;
+  color: #6f5b7d;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 550px;
+}
+
+.blog-signup-logo {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  justify-self: end;
+}
+
+.blog-signup-form {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.blog-signup-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 18px;
+  border: 1px solid #e4dce8;
+  border-radius: 12px;
+  background: white;
+  color: #2f2238;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+}
+
+.blog-signup-form input:focus {
+  border-color: #714078;
+}
+
+.blog-signup-form button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 12px;
+  background: #714078;
+  color: white;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.blog-signup-form button:hover {
+  background: #57315f;
+}
+
+.blog-signup-success {
+  display: none;
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #714078;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .blog-signup {
+    padding: 28px 22px;
+    margin: 30px auto;
+    grid-template-columns: 1fr 60px;
+    gap: 15px;
+  }
+
+  .blog-signup-copy h2 {
+    font-size: 22px;
+  }
+
+  .blog-signup-copy p {
+    font-size: 14px;
+  }
+
+  .blog-signup-logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .blog-signup-form {
+    flex-direction: column;
+  }
+
+  .blog-signup-form input,
+  .blog-signup-form button {
+    width: 100%;
+  }
+
+}
+
+    /* FILTERS */
+
+    .filters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      margin-bottom: 50px;
+    }
+
+    .filter-button {
+      border: 1px solid var(--border);
+      background: white;
+      color: var(--text);
+
+      padding: 10px 17px;
+      border-radius: 999px;
+
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 700;
+
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .filter-button:hover {
+      border-color: var(--purple);
+    }
+
+    .filter-button.active {
+      background: var(--dark);
+      border-color: var(--dark);
+      color: white;
+    }
+
+    /* ARTICLES */
+
+    .articles-header {
+      margin-bottom: 26px;
+    }
+
+    .articles-header h2 {
+      margin: 0 0 7px;
+      font-size: 30px;
+      letter-spacing: -0.04em;
+    }
+
+    .articles-header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 36px 24px;
+    }
+
+    .article-card {
+      color: var(--text);
+      text-decoration: none;
+      display: block;
+    }
+
+    .article-card.hidden {
+      display: none;
+    }
+
+    .article-image {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      border-radius: 20px;
+      overflow: hidden;
+      background: var(--soft-purple);
+      margin-bottom: 17px;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+
+      transition: transform 0.25s ease;
+    }
+
+    .article-card:hover .article-image img {
+      transform: scale(1.025);
+    }
+
+    /*
+      Temporary placeholders.
+      These disappear once we add actual article images.
+    */
+
+    .image-placeholder {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: var(--soft-purple);
+      color: var(--purple);
+
+      font-size: 42px;
+    }
+
+    .article-category {
+      margin-bottom: 8px;
+
+      color: var(--purple);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .article-card h3 {
+      margin: 0 0 9px;
+
+      font-size: 21px;
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+    }
+
+    .article-card p {
+      margin: 0;
+
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    /* MORE TO EXPLORE */
+
+    .more-section {
+      margin-top: 75px;
+    }
+
+    .article-list {
+      border-top: 1px solid var(--border);
+    }
+
+    .list-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+
+      padding: 27px 4px;
+
+      border-bottom: 1px solid var(--border);
+    }
+
+    .list-content {
+      max-width: 760px;
+    }
+
+    .list-card h3 {
+      margin: 0 0 7px;
+
+      color: var(--dark);
+      font-size: 22px;
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+    }
+
+    .list-card p {
+      margin: 0;
+
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .list-arrow {
+      flex-shrink: 0;
+      color: var(--purple);
+      font-size: 26px;
+      transition: transform 0.18s ease;
+    }
+
+    .list-card:hover .list-arrow {
+      transform: translateX(5px);
+    }
+
+    /* APP CTA */
+
+    .app-cta {
+      max-width: 720px;
+      margin: 85px auto 0;
+      padding: 42px 30px;
+      text-align: center;
+      background: var(--soft-purple);
+      border-radius: 24px;
+    }
+
+    .app-cta h2 {
+      margin: 0 0 10px;
+      color: var(--dark);
+      font-size: 28px;
+      letter-spacing: -0.035em;
+    }
+
+    .app-cta p {
+      margin: 0 auto 22px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .app-store-badge {
+      display: block;
+      width: 150px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      padding: 30px 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 16px;
+      font-size: 15px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+
+      .article-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+    }
+
+    @media (max-width: 640px) {
+
+      .site-header {
+        padding: 20px 18px;
+      }
+
+      .brand-logo {
+        width: 40px;
+        height: 40px;
+      }
+
+      .brand-name {
+        font-size: 21px;
+      }
+
+      main {
+        padding: 48px 18px 65px;
+      }
+
+      .blog-hero {
+        margin-bottom: 38px;
+      }
+
+      .filters {
+        justify-content: flex-start;
+        margin-bottom: 42px;
+      }
+
+      .article-grid {
+        grid-template-columns: 1fr;
+        gap: 38px;
+      }
+
+      .footer a {
+        display: inline-block;
+        margin: 7px 9px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+  <a href="/" class="brand">
+
+    <img
+      src="../gruvi.png"
+      alt="Gruvi logo"
+      class="brand-logo"
+    >
+
+    <span class="brand-name">
+      Gruvi
+    </span>
+
+  </a>
+
+  <nav class="header-nav">
+    <a href="/blog/">Blog</a>
+  </nav>
+
+</header>
+
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="blog-hero">
+
+    <p class="eyebrow">
+      
+    </p>
+
+    <h1>
+      Understand your health.<br>
+      Invest in yourself.
+    </h1>
+
+    <p>
+      Practical, evidence-based information to help you understand your body
+      and make small, meaningful choices for your health.
+    </p>
+
+  </section>
+ 
+  <!-- CATEGORY FILTERS -->
+
+  <div class="filters">
+
+    <button
+      class="filter-button active"
+      data-filter="all"
+    >
+      All
+    </button>
+
+    <button
+      class="filter-button"
+      data-filter="movement"
+    >
+      Movement & Strength
+    </button>
+
+    <button
+      class="filter-button"
+      data-filter="peri"
+    >
+      Perimenopause & Menopause
+    </button>
+
+    <button
+      class="filter-button"
+      data-filter="nutrition"
+    >
+      Nutrition
+    </button>
+
+    <button
+      class="filter-button"
+      data-filter="wellbeing"
+    >
+      Everyday Wellbeing
+    </button>
+
+  </div>
+
+
+  <!-- ARTICLES -->
+
+  <section>
+
+    <div class="articles-header">
+
+      <h2>Latest articles</h2>
+
+      <p>
+        Evidence-based answers to questions about your health and wellbeing.
+      </p>
+
+    </div>
+
+
+    <div class="article-grid">
+
+      <!-- ARTICLE 1 -->
+
+      <a
+        href="/blog/5-minute-workouts.html"
+        class="article-card"
+        data-category="movement"
+      >
+
+        <div class="article-image">
+          <img
+            src="/blog/5-min-workout.jpeg"
+            alt="Illustration representing movement and strength"
+          >
+        </div>
+
+        <div class="article-category">
+          Movement & Strength
+        </div>
+
+        <h3>
+          Do 5-minute workouts actually make a difference?
+        </h3>
+
+        <p>
+          What the research tells us about fitting short bursts of movement
+          into a busy day.
+        </p>
+
+      </a>
+
+
+      <!-- ARTICLE 2 -->
+
+      <a
+        href="/blog/strength-training-after-40.html"
+        class="article-card"
+        data-category="movement"
+      >
+
+        <div class="article-image">
+          <img
+            src="/blog/strength-training-after-40.jpeg"
+            alt="Pink hand-drawn dumbbell"
+          >
+        </div>
+
+        <div class="article-category">
+          Movement & Strength
+        </div>
+
+        <h3>
+          Why strength training matters more as we get older
+        </h3>
+
+        <p>
+          What happens to muscle as we age and why building strength
+          doesn't have to mean spending hours at the gym.
+        </p>
+
+      </a>
+
+
+      <!-- ARTICLE 3 -->
+
+ <a
+  href="/blog/perimenopause-too-young.html"
+  class="article-card"
+  data-category="peri"
+>
+
+  <div class="article-image">
+    <img
+      src="/blog/meno-young.jpeg"
+      alt="Woman navigating possible perimenopause symptoms"
+    >
+  </div>
+
+  <div class="article-category">
+    Perimenopause & Menopause
+  </div>
+
+  <h3>
+    Can you be too young for perimenopause?
+  </h3>
+
+  <p>
+    What current guidance says about age, symptoms, hormone testing —
+    and what to ask if your concerns are being dismissed.
+  </p>
+
+</a>
+
+    </div>
+
+       <!-- APP CTA -->
+
+<section class="app-cta">
+
+  <img
+    src="../gruvi.png"
+    alt="Gruvi"
+    class="app-cta-logo"
+  >
+
+  <h2>Understand your health beyond the article.</h2>
+
+  <p>
+    Track symptoms, wellbeing and patterns over time with Gruvi.
+  </p>
+
+  <a
+    href="https://apps.apple.com/ca/app/ls-companion/id6760978566"
+    id="blog-app-store-link"
+  >
+    <img
+      src="../appstore.png"
+      alt="Download Gruvi on the App Store"
+      class="app-store-badge"
+    >
+  </a>
+
+</section>
+
+
+
+
+    <!-- MORE TO EXPLORE -->
+
+    <div class="more-section">
+
+      <div class="articles-header">
+
+        <h2>More to explore</h2>
+
+        <p>
+          More practical reads about your health and wellbeing.
+        </p>
+
+      </div>
+
+
+      <div class="article-list">
+
+        <!-- ARTICLE 4 -->
+
+        <a
+          href="/blog/protein-after-40.html"
+          class="article-card list-card"
+          data-category="nutrition"
+        >
+
+          <div class="list-content">
+
+            <div class="article-category">
+              Nutrition
+            </div>
+
+            <h3>
+              Do women actually need more protein after 40?
+            </h3>
+
+            <p>
+              What the evidence actually says about protein, aging,
+              menopause, muscle and strength training.
+            </p>
+
+          </div>
+
+          <div class="list-arrow">→</div>
+
+        </a>
+
+
+        <!-- ARTICLE 5 -->
+
+        <a
+          href="/blog/movement-at-work.html"
+          class="article-card list-card"
+          data-category="movement"
+        >
+
+          <div class="list-content">
+
+            <div class="article-category">
+              Movement & Strength
+            </div>
+
+            <h3>
+              Stuck at a desk all day? Small ways to move more
+            </h3>
+
+            <p>
+              Realistic ways to add movement to your workday without
+              needing to find another hour in your schedule.
+            </p>
+
+          </div>
+
+          <div class="list-arrow">→</div>
+
+        </a>
+   <!-- ARTICLE 6 -->
+
+     <!-- ARTICLE 6 -->
+
+<a
+  href="/blog/perimenopause-sleep.html"
+  class="article-card list-card"
+  data-category="peri"
+>
+
+  <div class="list-content">
+
+    <div class="article-category">
+      Perimenopause & Menopause
+    </div>
+
+    <h3>
+      Why can sleep get so difficult during perimenopause?
+    </h3>
+
+    <p>
+      Understanding the changes that can affect sleep during the
+      menopause transition.
+    </p>
+
+  </div>
+
+  <div class="list-arrow">→</div>
+
+</a>
+
+        <!-- ARTICLE 7 -->
+
+        <a
+          href="/blog/small-health-habits.html"
+          class="article-card list-card"
+          data-category="wellbeing"
+        >
+
+          <div class="list-content">
+
+            <div class="article-category">
+              Everyday Wellbeing
+            </div>
+
+            <h3>
+              Too busy for a full workout? Small amounts of exercise still count
+            </h3>
+
+            <p>
+              What research says about minimal-dose exercise, maintaining your
+              strength and making the most of the time you have.
+            </p>
+
+          </div>
+
+          <div class="list-arrow">→</div>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- BLOG EMAIL SIGNUP -->
+
+<section class="blog-signup">
+
+  <div class="blog-signup-copy">
+    <h2>Want the next article?</h2>
+    <p>
+      Get new evidence-based women's health articles in your inbox.
+      No noise, just useful reads.
+    </p>
+  </div>
+
+  <img
+    src="/gruvi.png"
+    alt=""
+    class="blog-signup-logo"
+  >
+
+  <form id="blog-email-form" class="blog-signup-form">
+    <input
+      type="email"
+      id="blog-email"
+      placeholder="Your email address"
+      autocomplete="email"
+      required
+    >
+    <button type="submit">
+      Keep me updated
+    </button>
+  </form>
+
+  <p id="blog-signup-success" class="blog-signup-success">
+    You're on the list — we'll send you the next one.
+  </p>
+
+</section>
+
+
+
+</main>
+
+
+<footer class="footer">
+
+  <a href="/privacy.html">
+    Privacy Policy
+  </a>
+
+  <a href="/terms.html">
+    Terms of Use
+  </a>
+
+  <a
+    href="https://www.instagram.com/lscompanionapp/"
+    target="_blank"
+  >
+    Instagram
+  </a>
+
+</footer>
+
+
+<script>
+
+  const filterButtons =
+    document.querySelectorAll('.filter-button');
+
+  const articles =
+    document.querySelectorAll('.article-card');
+
+
+  /* BLOG PAGE VIEW */
+
+  amplitude.track('Blog Viewed');
+
+
+  filterButtons.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+      const selectedCategory =
+        button.dataset.filter;
+
+
+      /* TRACK CATEGORY FILTER */
+
+      amplitude.track('Blog Category Filtered', {
+        category: selectedCategory
+      });
+
+
+      /* Update active button */
+
+      filterButtons.forEach(btn =>
+        btn.classList.remove('active')
+      );
+
+      button.classList.add('active');
+
+
+      /* Filter articles */
+
+      articles.forEach(article => {
+
+        if (
+          selectedCategory === 'all' ||
+          article.dataset.category === selectedCategory
+        ) {
+
+          article.classList.remove('hidden');
+
+        } else {
+
+          article.classList.add('hidden');
+
+        }
+
+      });
+
+    });
+
+  });
+
+
+  /* TRACK ARTICLE CLICKS */
+
+  articles.forEach(article => {
+
+    article.addEventListener('click', () => {
+
+      const title =
+        article.querySelector('h3')?.textContent.trim();
+
+      amplitude.track('Blog Article Clicked', {
+        title: title,
+        category: article.dataset.category,
+        url: article.getAttribute('href')
+      });
+
+    });
+
+  });
+
+
+  /* TRACK APP STORE CTA */
+
+  const appStoreLink =
+    document.getElementById('blog-app-store-link');
+
+  if (appStoreLink) {
+
+    appStoreLink.addEventListener('click', () => {
+
+      amplitude.track('Blog App Store Clicked', {
+        location: 'blog_index_bottom_cta'
+      });
+
+    });
+
+  }
+  // BLOG EMAIL SIGNUP
+
+const blogEmailForm = document.getElementById('blog-email-form');
+const blogEmailInput = document.getElementById('blog-email');
+const blogSignupSuccess = document.getElementById('blog-signup-success');
+
+blogEmailInput.addEventListener('focus', function () {
+  window.amplitude.track('Blog Email Focused');
+});
+
+blogEmailForm.addEventListener('submit', async function (event) {
+  event.preventDefault();
+
+  const email = blogEmailInput.value.trim();
+
+  if (!email) return;
+
+  window.amplitude.track('Blog Email Submit Attempt');
+
+  const formData = new FormData();
+
+  // Email
+  formData.append('entry.340076253', email);
+
+  // Source
+  formData.append('entry.1341983288', 'blog');
+
+  try {
+
+    await fetch(
+      'https://docs.google.com/forms/d/e/1FAIpQLSddbM3r8sfMMAai2gkbggF8HeL3aDgqayX8Nm5RIv9uljPNCA/formResponse',
+      {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+      }
+    );
+
+    window.amplitude.track('Blog Email Joined', {
+      source: 'blog_index'
+    });
+
+    blogEmailForm.style.display = 'none';
+    blogSignupSuccess.style.display = 'block';
+
+  } catch (error) {
+
+    window.amplitude.track('Blog Email Submit Error', {
+      source: 'blog_index'
+    });
+
+  }
+});
+
+</script>
+
+
+</body>
+</html>
