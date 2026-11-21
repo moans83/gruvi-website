@@ -886,6 +886,28 @@ body { background:#ffffff; }
 .ref-hero-cta:hover {background:#57315f;}
 .ref-hero-proof {color:#6f5b7d;font-size:19px;margin-top:48px;display:flex;gap:25px;flex-wrap:wrap;}
 .ref-hero-proof strong {font-family:Georgia,serif;font-size:34px;font-weight:400;}
+/* Allow iPhone to overlap the left and right sections */
+.ref-hero-visual {
+  position: relative;
+  min-height: 600px;
+  background: #f4eef5;
+  overflow: visible;
+  z-index: 2;
+}
+
+/* Keep the woman's photo contained on the right */
+.ref-hero-photo {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Keep the text section behind the overlapping phone */
+.ref-hero-copy {
+  position: relative;
+  z-index: 1;
+}
 .ref-hero-woman {
   width: 120%;
   height: 100%;
